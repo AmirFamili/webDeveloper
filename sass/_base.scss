@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+$lightBlue:#001a8c;
+$blue: #081969;
+$darkBlue: #03071A;
+$white:#f3f5fe;
+$gray:#1d1d1e;
+$borderWithe:#F8F7FF;
+
+
+
+@mixin title{
+    color: $darkBlue;
+    font-size: 3.3rem;
+    padding: 3.5rem;
+    text-align: center;
+}

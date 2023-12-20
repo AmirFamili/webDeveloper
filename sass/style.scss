@@ -1,0 +1,772 @@
+@import "base";
+
+// * Header 
+
+.header-section {
+    position: fixed;
+
+
+    width: 3rem;
+    height: 100%;
+    background-color: $blue;
+    text-align: center;
+    z-index: 10;
+
+    .icon-top {
+        i {
+            color: $white;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            cursor: pointer;
+
+        }
+    }
+
+    .icon-bottom {
+        position: absolute;
+        left: 0.2rem;
+        bottom: 2rem;
+
+        i {
+            color: $white;
+            font-size: 1.6rem;
+            margin-top: 1.5rem;
+            cursor: pointer;
+
+        }
+    }
+}
+
+// * End Header 
+
+
+
+// * Main section
+.main-section {
+    height: 102vh;
+    background: linear-gradient(122deg, #03071A 49.37%, #0C195E 82.36%, #00168A 94.47%);
+
+    .header {
+        .box-logo {
+            .logo {
+                width: 90px;
+
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .btn-call {
+            text-align: right;
+            border-radius: 3rem;
+            color: $white;
+        }
+
+        @media (max-width: 767px) {
+            .box-logo {
+                h2 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        @media (max-width: 490px) {
+            .box-logo {
+                .logo {
+                    width: 60px;
+
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+    }
+
+
+    .main-section-box {
+        height: 100vh;
+
+        .box-1 {
+            margin-top: 1rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+
+            }
+
+            .btn-start {
+                border-radius: 3rem;
+                font-size: 1.1rem;
+            }
+
+        }
+
+        .box-2 {
+            margin-top: 1rem;
+            text-align: center;
+
+            img {
+                width: 80%;
+            }
+
+        }
+
+        @media (max-width: 1600px) {
+            .box-1 {
+                h1 {
+                    margin-top: 7rem;
+
+                }
+            }
+
+        }
+
+        @media (max-width: 1200px) {
+            .box-1 {
+                margin-top: 5rem;
+
+                h1 {
+                    font-size: 2.5rem;
+
+                }
+
+                p {
+                    font-size: 1.2rem;
+
+                }
+
+                .btn-start {
+                    font-size: 1rem;
+                }
+            }
+
+            .box-2 {
+                margin-top: 5rem;
+            }
+        }
+
+        @media (max-width: 980px) {
+            .box-1 {
+                h1 {
+                    font-size: 2.2rem;
+
+                }
+
+            }
+
+        }
+
+        @media (max-width: 850px) {
+            .box-1 {
+                h1 {
+                    font-size: 2rem;
+
+                }
+
+            }
+
+        }
+
+
+        @media (max-width: 767px) {
+
+            .box-1 {
+                text-align: center;
+                margin-top: 0rem;
+
+                h1 {
+                    font-size: 2rem;
+
+                }
+
+                p {
+                    font-size: 1.1rem;
+
+                }
+
+                .btn-start {
+                    font-size: 1rem;
+                }
+            }
+
+            .box-2 {
+                margin-top: 0rem;
+                text-align: center;
+
+                img {
+                    width: 45%;
+                    margin-top: 0;
+                }
+
+            }
+
+        }
+
+        @media (max-width: 685px) {
+            .box-1 {
+
+                h1 {
+                    font-size: 1.7rem;
+
+                }
+
+                p {
+                    font-size: 1.1rem;
+
+                }
+
+                .btn-start {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        @media (max-width: 499px) {
+            .box-1 {
+                margin-top: 1rem;
+            }
+        }
+
+       
+    }
+}
+@media (max-height: 550px) {
+    .main-section {
+        height: 152vh;
+    }  
+}
+// * End Main section
+
+
+
+// * Our Projects
+.our-projects {
+    overflow: hidden;
+
+    h2 {
+        @include title;
+    }
+
+    @media (max-width: 1200px) {
+
+        h2 {
+            font-size: 3rem;
+        }
+
+    }
+
+    @media (max-width: 1100px) {
+
+        h2 {
+            font-size: 2.8rem;
+        }
+
+    }
+
+    @media (max-width: 1000px) {
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    @media (max-width: 800px) {
+
+        h2 {
+            font-size: 2.3rem;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+
+        h2 {
+            font-size: 2rem;
+        }
+
+    }
+
+    .projectBox1 {
+        margin-left: -250px;
+        display: grid;
+        grid-auto-flow: column;
+
+
+        img {
+            height: 250px;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0.1rem 0.1rem 0.5rem $darkBlue;
+        }
+    }
+
+    .projectBox2 {
+        direction: rtl;
+        margin-right: -200px;
+        display: grid;
+        grid-auto-flow: column;
+
+
+        img {
+            height: 250px;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0.1rem 0.1rem 0.5rem $darkBlue;
+        }
+    }
+}
+
+// * End Our Projects
+
+
+
+
+// * Products
+.products {
+    background: $darkBlue;
+
+    h2 {
+        @include title;
+        color: $white;
+    }
+
+    @media (max-width: 1200px) {
+
+        h2 {
+            font-size: 3rem;
+        }
+
+    }
+
+    @media (max-width: 1100px) {
+
+        h2 {
+            font-size: 2.8rem;
+        }
+
+    }
+
+    @media (max-width: 1000px) {
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    @media (max-width: 800px) {
+
+        h2 {
+            font-size: 2.3rem;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+
+        h2 {
+            font-size: 2rem;
+        }
+
+    }
+
+    .show-products {
+        display: grid;
+        grid-auto-flow: column;
+        overflow-x: auto;
+
+        .product {
+            width: 23rem;
+            height: 35rem;
+            border: $white 2px solid;
+            margin: 1rem 2.3rem;
+            color: $white;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            overflow: hidden;
+
+            h3 {
+                color: $white;
+                text-align: center;
+                padding: 1.3rem;
+            }
+
+            h4 {
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .button {
+                text-align: center;
+                margin: 0.8rem;
+
+                .btn-order {
+                    padding: 0.6rem;
+                    border: 2px solid $white;
+                    border-radius: 1.2rem;
+                    text-decoration: none;
+                    color: $white;
+
+
+                }
+            }
+
+            .product-info {
+                margin: 2rem 0.5rem 0.5rem;
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-auto-flow: row;
+                overflow-y: auto;
+                padding: 1.5rem 3rem;
+
+            }
+
+            &:hover {
+                color: $darkBlue;
+                background: $white;
+
+                h3 {
+                    color: $darkBlue;
+
+                }
+
+                .btn-order {
+                    background-color: $lightBlue;
+                    border: 2px solid $lightBlue;
+
+                    &:hover {
+                        background-color: $white;
+                        border: 2px solid $lightBlue;
+                        color: $lightBlue;
+                        text-shadow: 0.1rem 0.1rem 0.6rem $darkBlue;
+                    }
+                }
+
+            }
+        }
+
+        @media (max-width: 490px) {
+
+            .product {
+                width: 18rem;
+                height: 34rem;
+                margin: 1rem 1rem;
+            }
+
+        }
+    }
+
+}
+
+// * End products
+
+
+
+
+
+
+// * Questions
+
+.askQuestions {
+    background-color: $white;
+    padding: 2rem 1rem;
+    margin-left: 2rem;
+
+    .questionsTitle {
+
+        padding-top: 18%;
+        padding-bottom: 20%;
+
+        h2 {
+            color: $darkBlue;
+            font-size: 4rem;
+        }
+    }
+
+    .questions {
+        padding-top: 15%;
+        padding-bottom: 5%;
+
+        .card {
+            button {
+                color: $darkBlue;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .questionsTitle {
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    @media (max-width: 950px) {
+        .questionsTitle {
+
+            h2 {
+                font-size: 2.3rem;
+            }
+        }
+
+    }
+
+    @media (max-width: 900px) {
+        .questionsTitle {
+            padding-top: 25%;
+
+        }
+
+    }
+
+    @media (max-width: 767px) {
+        .questionsTitle {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            h2 {
+                font-size: 2.8rem;
+                text-align: center;
+            }
+        }
+
+        .questions {
+            padding-top: 0;
+        }
+    }
+
+
+
+    @media (max-width: 767px) {
+        .questionsTitle {
+
+            h2 {
+                font-size: 2.3rem;
+
+            }
+        }
+
+        .card {
+            margin-left: 2rem;
+
+            .card-header {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            button {
+                font-size: 0.9rem;
+
+            }
+        }
+    }
+
+    @media (max-width: 575px) {
+        .questionsTitle {
+
+            h2 {
+                font-size: 2rem;
+
+            }
+        }
+    }
+
+
+
+}
+
+@media (max-width: 490px) {
+    .questions-section {
+        display: none;
+    }
+
+}
+
+// * End Questions
+
+
+
+
+
+// * Messsage
+.message {
+    background-color: $darkBlue;
+    padding: 6rem 0;
+    text-align: center;
+
+    .messageTitle {
+        h2 {
+            padding-top: 3rem;
+            font-size: 3.6rem;
+        }
+    }
+
+    .form {
+        form {
+            .input {
+                color: $white;
+                padding: 1rem;
+                margin: 0.5rem;
+                background: $gray;
+                border-radius: 0.5rem;
+            }
+            .border{
+                border: 1px solid $borderWithe;
+            }
+
+            #email {
+                width: 35%;
+              
+            }
+
+            #phone {
+                width: 35%;
+
+            }
+
+            #submit {
+
+                background: $blue;
+                padding: 1rem 4rem;
+                border: 1px solid $white;
+                border-radius: 1.2rem;
+                text-decoration: none;
+                color: $white;
+                margin-top: 1rem;
+                font-size: 1.1rem;
+
+                &:hover {
+                    background: $white;
+                    color: $blue;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+    .error{
+        border: 1px solid red;
+    }
+    .success{
+        border: 1px solid green;
+    }
+
+    @media (max-width: 1250px) {
+        .messageTitle h2 {
+            font-size: 3.2rem;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .messageTitle h2 {
+            font-size: 3rem;
+        }
+
+    }
+
+    @media (max-width: 980px) {
+        .messageTitle h2 {
+            font-size: 2.8rem;
+        }
+
+    }
+
+    @media (max-width: 880px) {
+        .messageTitle h2 {
+            font-size: 2.4rem;
+            padding-bottom: 3rem;
+        }
+
+    }
+
+    @media (max-width: 730px) {
+        .messageTitle h2 {
+            font-size: 2rem;
+            padding-bottom: 3rem;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+        .messageTitle h2 {
+            font-size: 1.6rem;
+            padding-bottom: 3rem;
+        }
+
+    }
+
+    @media (max-width: 530px) {
+        .messageTitle h2 {
+            font-size: 1.5rem;
+            padding-bottom: 3rem;
+            padding-left: 1.5rem;
+        }
+
+        .form {
+            form {
+                margin-left: 1.4rem;
+            }
+        }
+    }
+}
+
+// * End Messsage
+
+
+
+
+
+// * Footer
+.footer {
+    background-color: $darkBlue;
+
+
+    .footer-top {
+        color: $white;
+        padding: 0 2rem 2rem;
+
+        .box {
+            padding: 2rem;
+
+            a {
+                display: block;
+                padding: 0.3rem;
+                text-decoration: none;
+                color: $white;
+            }
+        }
+
+        @media (max-width:940px) {
+            .boxLogo {
+                display: none;
+            }
+        }
+
+
+    }
+
+    .footer-bottom {
+        border-top: 1px solid $white;
+        padding: 1rem;
+
+        h6 {
+            color: $white;
+            text-align: center;
+        }
+    }
+}
+
+// * End Footer

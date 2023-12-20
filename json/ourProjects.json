@@ -1,0 +1,54 @@
+{
+    "ourProjects": [
+        {
+            "group_id": 0,
+            "box_1": [
+                {
+                    "project_id": 0,
+                    "img": "images/projects/buy-battery.png",
+                    "alt": "car-battery"
+                },
+                {
+                    "project_id": 1,
+                    "img": "images/projects/movies.png",
+                    "alt": "movies"
+                },
+                {
+                    "project_id": 2,
+                    "img": "images/projects/weather.png",
+                    "alt": "The-Weather"
+                },
+                {
+                    "project_id": 3,
+                    "img": "images/projects/coffee.png",
+                    "alt": "animation"
+                }
+            ]
+        },
+        {
+            "group_id": 1,
+            "box_2": [
+                {
+                    "project_id": 0,
+                    "img": "images/projects/tic-toc-toe.png",
+                    "alt": "Tic-Toc-Toe"
+                },
+                {
+                    "project_id": 1,
+                    "img": "images/projects/snake.png",
+                    "alt": "Snake"
+                },
+                {
+                    "project_id": 2,
+                    "img": "images/projects/webDeveloper.png",
+                    "alt": "codding"
+                },
+                {
+                    "project_id": 3,
+                    "img": "images/projects/matching-game.png",
+                    "alt": "matching-game"
+                }
+            ]
+        }
+    ]
+}
