@@ -3,32 +3,75 @@
         {
             "product_id": 0,
             "title": "Startup Website",
-            "price": "$230",
-            "explain":["2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website"]
+            "price": "$450",
+            "explain": [
+                "5 Pages Website",
+                "Custom Layout Design",
+                "2 Banner Designs",
+                "Contact/Query Form",
+                "5 Stock photos",
+                "Design Favicon",
+                "Free Google Friendly Sitemap",
+                "Website Initial Concepts in 72 Hours",
+                "100% Money Back Guarantee"
+                
+            ]
         },
         {
             "product_id": 1,
-            "title": "Startup Website",
-            "price": "$240",
-            "explain":["5 pages Website","4 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website"]
+            "title": "Professional Website",
+            "price": "$880",
+            "explain": [
+                "Up to 10 Unique Pages Website",
+                "Custom Layout Design",
+                "5 Banner Designs",
+                "CMS/Admin Panel Intigration",
+                "Contact/Query Form",
+                "8 Stock photos",
+                "Design Favicon",
+                "Free Google Friendly Sitemap",
+                "Website Initial Concepts in 48 Hours",
+                "100% Money Back Guarantee",
+                "Mobile Responsive"
+            ]
         },
         {
             "product_id": 2,
-            "title": "Startup Website",
-            "price": "$250",
-            "explain":["5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website"]
+            "title": "Silver Website",
+            "price": "$1450",
+            "explain": [
+                "Up to 20 Unique Pages Website",
+                "Custom Layout Design",
+                "10 Banner Designs",
+                "CMS/Admin Panel Intigration",
+                "Contact/Query Form",
+                "15 Stock photos",
+                "Design Favicon",
+                "Free Google Friendly Sitemap",
+                "Website Initial Concepts in 48 Hours",
+                "100% Money Back Guarantee",
+                "Mobile Responsive"
+            ]
         },
         {
             "product_id": 3,
-            "title": "Startup Website",
-            "price": "$260",
-            "explain":["5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website"]
-        },
-        {
-            "product_id": 4,
-            "title": "Startup Website",
-            "price": "$270",
-            "explain":["5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","2 pages Website","3 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website","5 pages Website"]
+            "title": "Business Website",
+            "price": "$2800",
+            "explain": [
+                "Unlimited Pages Website",
+                "Custom Layout Design",
+                "Fully Mobile Responsive",
+                "10 Banner Designs",
+                "CMS/Admin Panel Intigration",
+                "Contact/Query Form",
+                "15 Stock photos",
+                "Design Favicon",
+                "Free Google Friendly Sitemap",
+                "Website Initial Concepts in 48 Hours",
+                "Content Management",
+                "100% Money Back Guarantee"
+                
+            ]
         }
     ]
 }
