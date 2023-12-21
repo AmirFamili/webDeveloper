@@ -268,7 +268,7 @@
   margin: 1rem 2.3rem;
   color: #f3f5fe;
   border-radius: 1rem;
-  padding: 0.8rem;
+  padding: 0.5rem;
   overflow: hidden;
 }
 .products .show-products .product h3 {
@@ -321,7 +321,7 @@
   .products .show-products .product {
     width: 18rem;
     height: 34rem;
-    margin: 1rem 1rem;
+    margin: 1rem 1.7rem;
   }
 }
 
