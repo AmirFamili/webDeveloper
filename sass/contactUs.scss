@@ -1,0 +1,203 @@
+@import "base";
+
+// * Main section
+.mainSection {
+    .header {
+        z-index: 5;
+        width: 100%;
+
+        .box-logo {
+            .logo {
+                width: 90px;
+
+            }
+
+            h2 {
+                font-size: 1.6rem;
+                text-shadow: 0.1rem 0.1rem 0.2rem $darkBlue;
+            }
+        }
+
+        .btn-call {
+            text-align: right;
+            border-radius: 3rem;
+            color: $darkBlue;
+
+            &:hover {
+                color: $white;
+                background-color: $lightBlue;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .box-logo {
+                h2 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        @media (max-width: 490px) {
+            .box-logo {
+                .logo {
+                    width: 60px;
+
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+
+    }
+
+    // *  Section Left
+    .box-left {
+        margin-left: -15px;
+        text-align: center;
+        background: url("../images/contactUs/bg-city.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        #title {
+            color: $white;
+            padding-top: 40%;
+            margin-left: 10%;
+            text-shadow: 0.3rem 0.2rem 0.5rem $darkBlue;
+        }
+
+        @media (max-width: 1100px) {
+            #title {
+                font-size: 2.1rem;
+            }
+        }
+
+        @media (max-width: 900px) {
+            #title {
+                font-size: 1.7rem;
+                padding-top: 60%;
+
+            }
+        }
+
+        @media (max-width: 800px) {
+            #title {
+                font-size: 1.5rem;
+                
+            }
+        }
+
+        @media (max-width: 700px) {
+            #title {
+                font-size: 1.3rem;
+                padding:70% 1rem 0;
+                padding-top: 70%;
+            }
+        }
+        @media (max-width: 600px) {
+            #title {
+                font-size: 1.6rem;
+              
+            }
+        }
+    
+    }
+
+    // *  End Section Left
+
+
+
+
+    // * Section Right
+    .box-right {
+        padding-left: 3rem;
+        padding-right: 3rem;
+       
+        #main-form {
+
+            h2 {
+                border-bottom: 2px solid $darkBlue;
+                opacity: 0.7;
+                font-size: 2rem;
+                width: 55%;
+                margin-bottom: 2rem;
+            }
+
+            form {
+                width: 100%;
+
+                .input {
+                    width: 100%;
+                    padding: 1rem;
+                    margin: 0.5rem;
+                    border-radius: 0.5rem;
+                }
+
+                #submit {
+                    width: 100%;
+                    background: $blue;
+                    padding: 1rem 4rem;
+                    border: 1px solid $white;
+                    border-radius: 1.2rem;
+                    text-decoration: none;
+                    color: $white;
+                    margin-top: 1rem;
+                    font-size: 1.1rem;
+                    margin-left: 1rem;
+
+                    &:hover {
+                        border: 2px solid $blue;
+                        background: $white;
+                        color: $blue;
+                        cursor: pointer;
+                    }
+                }
+                .error{
+                    border: 2px solid red;
+                }
+                .success{
+                    border: 2px solid green;
+                }
+            }
+        }
+        .information{
+            margin-bottom: 5rem;
+            h2 {
+                border-bottom: 2px solid $darkBlue;
+                opacity: 0.7;
+                font-size: 2rem;
+                width: 55%;
+                margin-bottom: 2rem;
+                margin-top: 5rem;
+            }
+            a {
+                display: block;
+                padding: 0.3rem;
+                text-decoration: none;
+                color: $darkBlue;
+                &:hover{
+                    color: $lightBlue;
+                }
+            }
+        }
+    }
+    @media (max-width:800px) {
+        .box-right {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+    @media (max-width:576px) {
+        .box-right {
+            padding-left: 4rem;
+            padding-right: rem;
+        }
+    }
+    // * End Section Right
+
+}
+
+// * End Main section

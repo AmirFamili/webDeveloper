@@ -223,6 +223,7 @@
 
 .products {
   background: #03071A;
+  height: 120vh;
 }
 .products h2 {
   color: #03071A;
@@ -263,7 +264,7 @@
 }
 .products .show-products .product {
   width: 23rem;
-  height: 35rem;
+  height: 33rem;
   border: #f3f5fe 2px solid;
   margin: 1rem 2.3rem;
   color: #f3f5fe;

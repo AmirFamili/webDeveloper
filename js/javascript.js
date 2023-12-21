@@ -327,7 +327,7 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: '.askQuestions',
                 start: "top top",
-                end: "74% 60% ",
+                end: "86% 60% ",
                 pin: ".questionsTitle-h2",
             }
         })
@@ -336,5 +336,25 @@ ScrollTrigger.matchMedia({
 
 
 // * End Animation Questions
+
+
+
+// * Animation Contact Us
+ScrollTrigger.matchMedia({
+    "(min-width: 575px)": function () {
+        gsap.to(".mainSection", {
+            scrollTrigger: {
+                trigger: '.mainSection',
+                start: "top top",
+                end: "bottom bottom",
+                pin: ".box-left",
+            }
+        })
+    }
+});
+
+
+// * End Animation Contact Us
+
 
 // * End Gsap

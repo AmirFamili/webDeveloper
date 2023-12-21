@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.mainSection .header {
+  z-index: 5;
+  width: 100%;
+}
+.mainSection .header .box-logo .logo {
+  width: 90px;
+}
+.mainSection .header .box-logo h2 {
+  font-size: 1.6rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem #03071A;
+}
+.mainSection .header .btn-call {
+  text-align: right;
+  border-radius: 3rem;
+  color: #03071A;
+}
+.mainSection .header .btn-call:hover {
+  color: #f3f5fe;
+  background-color: #001a8c;
+}
+@media (max-width: 767px) {
+  .mainSection .header .box-logo h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 490px) {
+  .mainSection .header .box-logo .logo {
+    width: 60px;
+  }
+  .mainSection .header .box-logo h2 {
+    font-size: 1.1rem;
+  }
+}
+.mainSection .box-left {
+  margin-left: -15px;
+  text-align: center;
+  background: url("../images/contactUs/bg-city.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.mainSection .box-left #title {
+  color: #f3f5fe;
+  padding-top: 40%;
+  margin-left: 10%;
+  text-shadow: 0.3rem 0.2rem 0.5rem #03071A;
+}
+@media (max-width: 1100px) {
+  .mainSection .box-left #title {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 900px) {
+  .mainSection .box-left #title {
+    font-size: 1.7rem;
+    padding-top: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .mainSection .box-left #title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .mainSection .box-left #title {
+    font-size: 1.3rem;
+    padding: 70% 1rem 0;
+    padding-top: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .mainSection .box-left #title {
+    font-size: 1.6rem;
+  }
+}
+.mainSection .box-right {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.mainSection .box-right #main-form h2 {
+  border-bottom: 2px solid #03071A;
+  opacity: 0.7;
+  font-size: 2rem;
+  width: 55%;
+  margin-bottom: 2rem;
+}
+.mainSection .box-right #main-form form {
+  width: 100%;
+}
+.mainSection .box-right #main-form form .input {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.mainSection .box-right #main-form form #submit {
+  width: 100%;
+  background: #081969;
+  padding: 1rem 4rem;
+  border: 1px solid #f3f5fe;
+  border-radius: 1.2rem;
+  text-decoration: none;
+  color: #f3f5fe;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+.mainSection .box-right #main-form form #submit:hover {
+  border: 2px solid #081969;
+  background: #f3f5fe;
+  color: #081969;
+  cursor: pointer;
+}
+.mainSection .box-right #main-form form .error {
+  border: 2px solid red;
+}
+.mainSection .box-right #main-form form .success {
+  border: 2px solid green;
+}
+.mainSection .box-right .information {
+  margin-bottom: 5rem;
+}
+.mainSection .box-right .information h2 {
+  border-bottom: 2px solid #03071A;
+  opacity: 0.7;
+  font-size: 2rem;
+  width: 55%;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+.mainSection .box-right .information a {
+  display: block;
+  padding: 0.3rem;
+  text-decoration: none;
+  color: #03071A;
+}
+.mainSection .box-right .information a:hover {
+  color: #001a8c;
+}
+@media (max-width: 800px) {
+  .mainSection .box-right {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .mainSection .box-right {
+    padding-left: 4rem;
+    padding-right: rem;
+  }
+}

@@ -236,14 +236,16 @@
             }
         }
 
-       
+
     }
 }
+
 @media (max-height: 550px) {
     .main-section {
         height: 152vh;
-    }  
+    }
 }
+
 // * End Main section
 
 
@@ -330,10 +332,10 @@
 
 
 
-
 // * Products
 .products {
     background: $darkBlue;
+    height: 120vh;
 
     h2 {
         @include title;
@@ -387,7 +389,7 @@
 
         .product {
             width: 23rem;
-            height: 35rem;
+            height: 33rem;
             border: $white 2px solid;
             margin: 1rem 2.3rem;
             color: $white;
@@ -470,9 +472,6 @@
 }
 
 // * End products
-
-
-
 
 
 
@@ -598,9 +597,6 @@
 // * End Questions
 
 
-
-
-
 // * Messsage
 .message {
     background-color: $darkBlue;
@@ -623,13 +619,14 @@
                 background: $gray;
                 border-radius: 0.5rem;
             }
-            .border{
+
+            .border {
                 border: 1px solid $borderWithe;
             }
 
             #email {
                 width: 35%;
-              
+
             }
 
             #phone {
@@ -657,10 +654,12 @@
 
         }
     }
-    .error{
+
+    .error {
         border: 1px solid red;
     }
-    .success{
+
+    .success {
         border: 1px solid green;
     }
 
@@ -724,9 +723,6 @@
 }
 
 // * End Messsage
-
-
-
 
 
 // * Footer
