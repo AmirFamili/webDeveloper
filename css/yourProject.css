@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.title-section {
+  height: 35vh;
+  background: linear-gradient(122deg, #03071A 49.37%, #0C195E 82.36%, #00168A 94.47%);
+}
+.title-section .header .box-logo .logo {
+  width: 90px;
+}
+.title-section .header .box-logo h2 {
+  font-size: 1.6rem;
+}
+.title-section .header .btn-call {
+  text-align: right;
+  border-radius: 3rem;
+  color: #f3f5fe;
+}
+.title-section .header .btn-call:hover {
+  color: #001a8c;
+}
+@media (max-width: 767px) {
+  .title-section .header .box-logo h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 490px) {
+  .title-section .header .box-logo .logo {
+    width: 60px;
+  }
+  .title-section .header .box-logo h2 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1500px) {
+  .title-section .box-1 h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 750px) {
+  .title-section .box-1 h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .title-section .box-1 h1 {
+    padding-top: 3rem;
+    font-size: 1.6rem;
+  }
+}
+
+.ShowYourProjects #project th {
+  color: #001a8c;
+  font-size: 1.1rem;
+}
+.ShowYourProjects #project td {
+  text-align: center;
+  font-size: 1.1rem;
+}

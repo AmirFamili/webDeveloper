@@ -1,0 +1,103 @@
+@import "base";
+
+
+// * Title Section
+.title-section {
+    height: 35vh;
+    background: linear-gradient(122deg, #03071A 49.37%, #0C195E 82.36%, #00168A 94.47%);
+
+    .header {
+        .box-logo {
+            .logo {
+                width: 90px;
+
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .btn-call {
+            text-align: right;
+            border-radius: 3rem;
+            color: $white;
+
+            &:hover {
+                color: $lightBlue;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .box-logo {
+                h2 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        @media (max-width: 490px) {
+            .box-logo {
+                .logo {
+                    width: 60px;
+
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 1500px) {
+        .box-1 {
+            h1 {
+                font-size: 2.3rem;
+
+            }
+        }
+
+    }
+
+    @media (max-width: 750px) {
+        .box-1 {
+            h1 {
+                font-size: 2rem;
+
+            }
+        }
+
+    }
+
+    @media (max-width: 575px) {
+        .box-1 {
+            h1 {
+                padding-top: 3rem;
+                font-size: 1.6rem;
+
+            }
+        }
+
+    }
+}
+
+// * End Title Section
+
+
+//  * Show Your Projects
+.ShowYourProjects{
+#project{
+    th{
+        color: $lightBlue;
+        font-size: 1.1rem;
+    }
+    td{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+}
+
+// * End Show Your Projects

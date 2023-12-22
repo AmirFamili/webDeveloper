@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.title-section {
+  height: 35vh;
+  background: linear-gradient(122deg, #03071A 49.37%, #0C195E 82.36%, #00168A 94.47%);
+}
+.title-section .header .box-logo .logo {
+  width: 90px;
+}
+.title-section .header .box-logo h2 {
+  font-size: 1.6rem;
+}
+.title-section .header .btn-call {
+  text-align: right;
+  border-radius: 3rem;
+  color: #f3f5fe;
+}
+.title-section .header .btn-call:hover {
+  color: #001a8c;
+}
+@media (max-width: 767px) {
+  .title-section .header .box-logo h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 490px) {
+  .title-section .header .box-logo .logo {
+    width: 60px;
+  }
+  .title-section .header .box-logo h2 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1500px) {
+  .title-section .box-1 h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 750px) {
+  .title-section .box-1 h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .title-section .box-1 h1 {
+    padding-top: 3rem;
+    font-size: 1.6rem;
+  }
+}
+
+#step-by-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7rem;
+}
+@media (max-width: 770px) {
+  #step-by-step #step-by-step {
+    margin-top: 8rem;
+  }
+  #step-by-step .circle {
+    font-size: 1rem;
+  }
+}
+#step-by-step .container {
+  text-align: center;
+}
+#step-by-step .container .progress-container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-bottom: 2rem;
+  font-family: 1.1rem;
+  max-width: 100%;
+  width: 20.5rem;
+}
+#step-by-step .container .progress-container::after {
+  content: "";
+  background-color: #e0e0e0;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  height: 0.25rem;
+  width: 100%;
+  z-index: -2;
+}
+#step-by-step .container .progress-container .progress {
+  background-color: #001a8c;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  height: 0.25rem;
+  width: 0;
+  z-index: -1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+#step-by-step .container .progress-container .circle {
+  background-color: #f3f3e2;
+  border-radius: 50%;
+  width: 4.7rem;
+  height: 4.7rem;
+  padding: 0.5rem;
+  border: 1px solid #cbcbcb;
+  z-index: -1;
+  color: #726f6f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+#step-by-step .container .progress-container .circle.active {
+  color: #001a8c;
+  border: 2px solid #001a8c;
+}
+@media (max-width: 550px) {
+  #step-by-step .container .progress-container {
+    width: 18rem;
+  }
+}
+
+#information-cart {
+  padding: 2rem;
+}
+#information-cart #product .product {
+  width: 50%;
+  height: 35rem;
+  border: #081969 2px solid;
+  margin: 1rem auto;
+  color: #03071A;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+#information-cart #product .product h3 {
+  color: #03071A;
+  text-align: center;
+  padding: 1.3rem;
+}
+#information-cart #product .product h4 {
+  text-align: center;
+  padding: 0.5rem;
+  color: #03071A;
+}
+#information-cart #product .product .product-info {
+  margin: 0.5rem;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  overflow-y: auto;
+  padding: 1rem 3rem;
+}
+@media (max-width: 1200px) {
+  #information-cart #product .product {
+    width: 70%;
+  }
+}
+@media (max-width: 870px) {
+  #information-cart #product .product {
+    width: 80%;
+  }
+}
+@media (max-width: 670px) {
+  #information-cart #product .product {
+    width: 85%;
+  }
+}
+#information-cart #form {
+  padding: 1rem;
+}
+#information-cart #form h4 {
+  font-family: 1.2rem;
+  padding: 1rem 0;
+}
+#information-cart #form #register .input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+#information-cart #form #register span {
+  color: rgb(255, 0, 0);
+}
+#information-cart #form #register #submit {
+  background: #081969;
+  padding: 0.8rem;
+  margin-left: 0.1rem;
+  border: 1px solid #f3f5fe;
+  border-radius: 1.2rem;
+  color: #f3f5fe;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+#information-cart #form #register #submit:hover {
+  background: #f3f5fe;
+  color: #001a8c;
+  border: 1px solid #001a8c;
+  cursor: pointer;
+}
+#information-cart .error {
+  border: 1px solid rgb(255, 0, 0);
+}
+#information-cart .success {
+  border: 1px solid rgb(0, 128, 0);
+}
+@media (max-width: 575px) {
+  #information-cart #form {
+    margin-left: 4.8rem;
+  }
+}
+#information-cart #box-web-breif h4 {
+  margin: auto;
+}
+#information-cart #box-web-breif .web-breif {
+  margin: auto;
+}
+#information-cart #box-web-breif .web-breif .input {
+  border-radius: 1rem;
+  background-color: #f3f5fe;
+}
+#information-cart #box-web-breif .web-breif span {
+  color: rgb(255, 0, 0);
+}
+#information-cart #box-web-breif .web-breif #error {
+  color: rgb(255, 0, 0);
+  padding-left: 1rem;
+}
+#information-cart #box-web-breif .web-breif #btn-submit {
+  background: #081969;
+  border: 1px solid #f3f5fe;
+  border-radius: 1.2rem;
+  color: #f3f5fe;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+#information-cart #box-web-breif .web-breif #btn-submit:hover {
+  background: #f3f5fe;
+  color: #001a8c;
+  border: 1px solid #001a8c;
+  cursor: pointer;
+}
+#information-cart #start-project span {
+  color: #001a8c;
+}

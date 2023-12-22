@@ -62,6 +62,10 @@
             text-align: right;
             border-radius: 3rem;
             color: $white;
+
+            &:hover {
+                color: $lightBlue;
+            }
         }
 
         @media (max-width: 767px) {
@@ -389,7 +393,7 @@
 
         .product {
             width: 23rem;
-            height: 33rem;
+            height: 35rem;
             border: $white 2px solid;
             margin: 1rem 2.3rem;
             color: $white;
@@ -467,6 +471,48 @@
             }
 
         }
+    }
+
+}
+
+@media (max-height: 700px) {
+
+    .products {
+        height: 140vh;
+    }
+
+}
+
+
+@media (max-height: 600px) {
+
+    .products {
+        height: 160vh;
+    }
+
+}
+
+
+@media (max-height: 510px) {
+
+    .products {
+        height: 200vh;
+    }
+
+}
+
+@media (max-height: 410px) {
+
+    .products {
+        height: 250vh;
+    }
+
+}
+
+@media (max-height: 340px) {
+
+    .products {
+        height: 300vh;
     }
 
 }
@@ -656,11 +702,11 @@
     }
 
     .error {
-        border: 1px solid red;
+        border: 1px solid $red;
     }
 
     .success {
-        border: 1px solid green;
+        border: 1px solid $green;
     }
 
     @media (max-width: 1250px) {

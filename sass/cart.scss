@@ -1,0 +1,364 @@
+@import "base";
+
+// * Title Section
+.title-section {
+    height: 35vh;
+    background: linear-gradient(122deg, #03071A 49.37%, #0C195E 82.36%, #00168A 94.47%);
+
+    .header {
+        .box-logo {
+            .logo {
+                width: 90px;
+
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .btn-call {
+            text-align: right;
+            border-radius: 3rem;
+            color: $white;
+
+            &:hover {
+                color: $lightBlue;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .box-logo {
+                h2 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        @media (max-width: 490px) {
+            .box-logo {
+                .logo {
+                    width: 60px;
+
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 1500px) {
+        .box-1 {
+            h1 {
+                font-size: 2.3rem;
+
+            }
+        }
+
+    }
+
+    @media (max-width: 750px) {
+        .box-1 {
+            h1 {
+                font-size: 2rem;
+
+            }
+        }
+
+    }
+
+    @media (max-width: 575px) {
+        .box-1 {
+            h1 {
+                padding-top: 3rem;
+                font-size: 1.6rem;
+
+            }
+        }
+
+    }
+}
+
+// * End Title Section
+
+
+// * Cart
+// * Step-by-Step
+#step-by-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+
+    @media (max-width:770px) {
+        #step-by-step {
+            margin-top: 8rem;
+        }
+
+        .circle {
+            font-size: 1rem;
+        }
+    }
+
+    .container {
+        text-align: center;
+
+
+
+        .progress-container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 2rem;
+            font-family: 1.1rem;
+            max-width: 100%;
+            width: 20.5rem;
+
+            &::after {
+                content: "";
+                background-color: #e0e0e0;
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                left: 0;
+                height: 0.25rem;
+                width: 100%;
+                z-index: -2;
+            }
+
+            .progress {
+
+                background-color: $lightBlue;
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                left: 0;
+                height: 0.25rem;
+                width: 0;
+                z-index: -1;
+                transition: 0.5s ease;
+            }
+
+            .circle {
+                background-color: #f3f3e2;
+                border-radius: 50%;
+                width: 4.7rem;
+                height: 4.7rem;
+                padding: 0.5rem;
+                border: 1px solid #cbcbcb;
+                z-index: -1;
+                color: #726f6f;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.4s ease;
+            }
+
+            .circle.active {
+                color: $lightBlue;
+                border: 2px solid $lightBlue;
+            }
+        }
+
+        @media (max-width:550px) {
+            .progress-container {
+                width: 18rem;
+            }
+        }
+    }
+}
+
+// * End Step-by-Step
+
+
+
+// * Information Cart
+#information-cart {
+    padding: 2rem;
+
+
+
+    // * product
+    #product {
+        .product {
+            width: 50%;
+            height: 35rem;
+            border: $blue 2px solid;
+            margin: 1rem auto;
+            color: $darkBlue;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            overflow: hidden;
+
+            h3 {
+                color: $darkBlue;
+                text-align: center;
+                padding: 1.3rem;
+            }
+
+            h4 {
+                text-align: center;
+                padding: 0.5rem;
+                color: $darkBlue;
+            }
+
+
+            .product-info {
+                margin: 0.5rem;
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-auto-flow: row;
+                overflow-y: auto;
+                padding: 1rem 3rem;
+
+            }
+
+        }
+
+        @media (max-width:1200px) {
+            .product {
+                width: 70%;
+            }
+        }
+
+        @media (max-width:870px) {
+            .product {
+                width: 80%;
+            }
+        }
+
+        @media (max-width:670px) {
+            .product {
+                width: 85%;
+            }
+        }
+    }
+
+    // * End product
+
+
+
+    // * Form
+    #form {
+        padding: 1rem;
+
+        h4 {
+            font-family: 1.2rem;
+            padding: 1rem 0;
+        }
+
+        #register {
+            .input {
+                padding: 1rem;
+                margin-bottom: 1rem;
+                border-radius: 0.5rem;
+            }
+
+            span {
+                color: $red;
+            }
+
+            #submit {
+                background: $blue;
+                padding: 0.8rem;
+                margin-left: 0.1rem;
+                border: 1px solid $white;
+                border-radius: 1.2rem;
+                color: $white;
+                margin-top: 0.5rem;
+                font-size: 1.1rem;
+
+                &:hover {
+                    background: $white;
+                    color: $lightBlue;
+                    border: 1px solid $lightBlue;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .error {
+        border: 1px solid $red;
+    }
+
+    .success {
+        border: 1px solid $green;
+    }
+
+    @media (max-width: 575px) {
+
+        #form {
+
+            margin-left: 4.8rem;
+
+        }
+    }
+
+
+
+    // * End Form
+
+
+    // * Web Breif
+    #box-web-breif {
+        h4 {
+            margin: auto;
+        }
+
+        .web-breif {
+            margin: auto;
+
+            .input {
+                border-radius: 1rem;
+                background-color: $white;
+            }
+
+         
+            span{
+                color: $red;
+            }
+            #error{
+                color: $red;
+                padding-left: 1rem;
+            }
+            #btn-submit {
+                background: $blue;
+                border: 1px solid $white;
+                border-radius: 1.2rem;
+                color: $white;
+                margin-top: 0.5rem;
+                font-size: 1.1rem;
+
+                &:hover {
+                    background: $white;
+                    color: $lightBlue;
+                    border: 1px solid $lightBlue;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    // * End Web Breif
+
+// * Start Project
+#start-project{
+span{
+    color: $lightBlue;
+}
+}
+// * Start Project
+
+}
+
+// * End Information Cart
+
+
+// * End Cart

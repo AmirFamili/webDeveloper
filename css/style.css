@@ -48,6 +48,9 @@
   border-radius: 3rem;
   color: #f3f5fe;
 }
+.main-section .header .btn-call:hover {
+  color: #001a8c;
+}
 @media (max-width: 767px) {
   .main-section .header .box-logo h2 {
     font-size: 1.3rem;
@@ -264,7 +267,7 @@
 }
 .products .show-products .product {
   width: 23rem;
-  height: 33rem;
+  height: 35rem;
   border: #f3f5fe 2px solid;
   margin: 1rem 2.3rem;
   color: #f3f5fe;
@@ -326,6 +329,31 @@
   }
 }
 
+@media (max-height: 700px) {
+  .products {
+    height: 140vh;
+  }
+}
+@media (max-height: 600px) {
+  .products {
+    height: 160vh;
+  }
+}
+@media (max-height: 510px) {
+  .products {
+    height: 200vh;
+  }
+}
+@media (max-height: 410px) {
+  .products {
+    height: 250vh;
+  }
+}
+@media (max-height: 340px) {
+  .products {
+    height: 300vh;
+  }
+}
 .askQuestions {
   background-color: #f3f5fe;
   padding: 2rem 1rem;
@@ -442,10 +470,10 @@
   cursor: pointer;
 }
 .message .error {
-  border: 1px solid red;
+  border: 1px solid rgb(255, 0, 0);
 }
 .message .success {
-  border: 1px solid green;
+  border: 1px solid rgb(0, 128, 0);
 }
 @media (max-width: 1250px) {
   .message .messageTitle h2 {
