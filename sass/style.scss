@@ -4,22 +4,86 @@
 
 .header-section {
     position: fixed;
-
-
     width: 3rem;
     height: 100%;
     background-color: $blue;
     text-align: center;
     z-index: 10;
 
-    .icon-top {
-        i {
-            color: $white;
-            font-size: 1.6rem;
-            margin-top: 2rem;
-            cursor: pointer;
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        position: absolute;
+        left: 0.5rem;
+        top: 2rem;
+
+        input {
+            appearance: none;
+        }
+
+        &::before,
+        &::after,
+        & input {
+            content: '';
+            width: $barwidth;
+            height: $barheight;
+            border-radius: 1rem;
+            transform-origin: left center;
+            transition: opacity $animation-timing, width $animation-timing, rotate $animation-timing, translate $animation-timing, back-ground $animation-timing;
+            z-index: 11;
+            background-color: white;
+        }
+
+
+        &:has(input:checked)::before {
+            rotate: 45deg;
+            width: $x-width;
+            translate: 0 calc($barheight/-2);
 
         }
+
+        &:has(input:checked)::after {
+            rotate: -45deg;
+            width: $x-width;
+            translate: 0 calc($barheight/2);
+
+        }
+
+        & input:checked {
+            opacity: 0;
+            width: 0;
+
+
+        }
+
+        &:has(input:checked)+.sidebar {
+            translate: 0
+        }
+    }
+
+
+
+    .sidebar {
+        padding-top: calc($hamburger-height*2.7);
+        padding-left: 1rem;
+        background-color: $blue;
+        color: white;
+        width: 9rem;
+        min-height: 100vh;
+        translate: -200%;
+        transition: translate $animation-timing;
+        position: absolute;
+    }
+
+    .sidebar nav a {
+        margin-top: 0.8rem;
+        text-align: left;
+        display: block;
+        text-decoration: none;
+        color: $white;
+
     }
 
     .icon-bottom {
@@ -769,6 +833,205 @@
 }
 
 // * End Messsage
+
+
+
+// * chatbot
+
+.chatbot {
+
+    width: 25rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 5.5rem;
+    background-color: $white;
+    border-radius: 1rem;
+    border: 1px solid $darkBlue;
+    box-shadow: 0.1rem 0.1rem 0.8rem $darkBlue;
+    overflow: hidden;
+    transform: scale(0.5);
+    pointer-events: none;
+    opacity: 0;
+    overflow: hidden;
+
+    header {
+        background-color: $blue;
+        color: $white;
+        padding: 1rem;
+        position: relative;
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        i {
+            position: absolute;
+            right: 1rem;
+            top: 40%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transform: translateY(-50%);
+            display: none;
+        }
+    }
+
+    .chatbox {
+        overflow-y: auto;
+        padding: 1rem;
+        height: 25rem;
+
+        .chat {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+
+            p {
+                color: $white;
+                background-color: $blue;
+                padding: 0.7rem;
+                font-size: 0.95rem;
+                max-width: 75%;
+            }
+
+        }
+
+        .incoming {
+            i {
+                padding: 1.2rem 0.5rem;
+                font-size: 1.2rem;
+                align-self: flex-end;
+                color: $blue;
+            }
+
+            p {
+                color: $blue;
+                background-color: $darkWithe;
+                border-radius: 0.5rem 0.5rem 0.5rem 0;
+            }
+
+        }
+
+        .outgoing {
+            justify-content: flex-end;
+
+            p {
+                border-radius: 0.5rem 0.5rem 0 0.5rem;
+
+            }
+        }
+    }
+
+    .chat-input {
+        position: absolute;
+        bottom: 0;
+        padding: 0.4rem 1rem;
+        width: 100%;
+        border-top: 1px solid $blue;
+        display: flex;
+        gap: 5px;
+        background-color: $white;
+
+        #message {
+            width: 100%;
+            height: 3.5rem;
+            border: none;
+            outline: none;
+            padding: 1rem 0.3rem;
+            font-size: 0.95rem;
+            background-color: $white;
+            resize: none;
+        }
+
+        #send-btn {
+            font-size: 1.2rem;
+            align-self: center;
+            color: $blue;
+            cursor: pointer;
+            visibility: hidden;
+        }
+
+        #message:valid~#send-btn {
+            visibility: visible;
+        }
+    }
+
+}
+
+@media (max-width:490px) {
+    .chatbot {
+        right: 0;
+        bottom: 0;
+        width: 90%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 0;
+
+        header {
+            i {
+                display: block;
+            }
+        }
+
+        .chatbox {
+            height: 90%;
+
+        }
+    }
+
+}
+
+.show-chatbot .chatbot {
+
+    transform: scale(1);
+    pointer-events: auto;
+    opacity: 1;
+    transition: opacity 0.3s;
+    transition: transform 0.3s;
+}
+
+.chatbot-toggler {
+
+    position: fixed;
+    border: none;
+    background-color: $blue;
+    color: $white;
+    width: 3.3rem;
+    height: 3.3rem;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 50%;
+    border: 1px solid $white;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+
+    i {
+        position: absolute;
+        font-size: 1.3rem;
+    }
+
+    i:last-child {
+        opacity: 0;
+    }
+}
+
+.show-chatbot .chatbot-toggler {
+    i:last-child {
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+
+    i:first-child {
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+}
+
+// * End chatbot
+
 
 
 // * Footer

@@ -11,10 +11,18 @@ $lightBlue:#001a8c;
 $blue: #081969;
 $darkBlue: #03071A;
 $white:#f3f5fe;
+$darkWithe:#e4e8fb;
 $gray:#1d1d1e;
 $borderWithe:#F8F7FF;
 $red:rgb(255, 0, 0);
 $green:rgb(0, 128, 0);
+
+$barwidth: 2rem;
+$barheight: 0.2rem;
+$gap: 0.3rem;
+$animation-timing: 300ms ease-in-out;
+$hamburger-height: calc($barheight*3 + $gap*2);
+$x-width: calc($hamburger-height* 1.41421356237);
 
 
 @mixin title{

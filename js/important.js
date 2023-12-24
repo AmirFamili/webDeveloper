@@ -1,4 +1,85 @@
 
+// * Chatbot
+const body = document.querySelector('body');
+const chatbot_toggler = document.querySelector('.chatbot-toggler');
+const chatbox = document.querySelector('.chatbox');
+
+const chat_input = document.querySelector('.chat-input textarea');
+const send_btn = document.querySelector('.chat-input  #send-btn');
+
+let userMessage;
+const API_KEY = "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";
+
+chatbot_toggler.addEventListener('click', () => {
+    if (body.classList.contains('show-chatbot')) {
+        body.classList.remove('show-chatbot');
+    } else {
+        body.classList.add('show-chatbot');
+    }
+
+
+})
+
+const showChatLi = (userMessage, className) => {
+
+    const li = document.createElement('li');
+    li.classList.add('chat', className);
+    let chatContent = className === 'outgoing' ? `<p>${userMessage}</p>` : `<i class="fa-solid fa-robot"></i><p>${userMessage}</p>`;
+    li.innerHTML = chatContent;
+    chat_input.value = '';
+    return li;
+}
+
+
+
+const generateResponse = (incomingChatLi) => {
+    const API_URL = "https://api.openai.com/v1/chat/completions";
+    const messageElement = incomingChatLi.querySelector('p');
+
+    const requestOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorizaion": `Bearer${API_KEY}`
+        },
+        body: JSON.stringify({
+            "model": "gpt-3.5-turbo",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": userMessage
+                }]
+        })
+    }
+
+    fetch(API_URL, requestOptions)
+        .then(response => response.json())
+        .then(data => messageElement.textContent = data.choices[0].message.content)
+        .catch(error => messageElement.textContent = 'Oops! Something went wrong. Please try again.')
+}
+
+send_btn.addEventListener('click', () => {
+    userMessage = chat_input.value.trim();
+    if (!userMessage) return;
+
+    chatbox.appendChild(showChatLi(userMessage, 'outgoing'));
+
+    setTimeout(() => {
+        const incomingChatLi = showChatLi('Thinking...', 'incoming');
+        chatbox.appendChild(incomingChatLi);
+        generateResponse(incomingChatLi);
+    }, 500);
+
+
+})
+
+// * End Chatbot
+
+
+
+
+
+
 //-------------------------------------------------------------------------------
 // * Gsap
 

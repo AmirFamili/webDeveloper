@@ -15,11 +15,71 @@
   text-align: center;
   z-index: 10;
 }
-.header-section .icon-top i {
+.header-section .hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 2rem;
+}
+.header-section .hamburger-menu input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.header-section .hamburger-menu::before, .header-section .hamburger-menu::after, .header-section .hamburger-menu input {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  border-radius: 1rem;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: opacity 300ms ease-in-out, width 300ms ease-in-out, rotate 300ms ease-in-out, translate 300ms ease-in-out, back-ground 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out, width 300ms ease-in-out, rotate 300ms ease-in-out, translate 300ms ease-in-out, back-ground 300ms ease-in-out;
+  z-index: 11;
+  background-color: white;
+}
+.header-section .hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: 1.6970562748rem;
+  translate: 0 -0.1rem;
+}
+.header-section .hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: 1.6970562748rem;
+  translate: 0 0.1rem;
+}
+.header-section .hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+.header-section .hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
+.header-section .sidebar {
+  padding-top: 3.24rem;
+  padding-left: 1rem;
+  background-color: #081969;
+  color: white;
+  width: 9rem;
+  min-height: 100vh;
+  translate: -200%;
+  -webkit-transition: translate 300ms ease-in-out;
+  transition: translate 300ms ease-in-out;
+  position: absolute;
+}
+.header-section .sidebar nav a {
+  margin-top: 0.8rem;
+  text-align: left;
+  display: block;
+  text-decoration: none;
   color: #f3f5fe;
-  font-size: 1.6rem;
-  margin-top: 2rem;
-  cursor: pointer;
 }
 .header-section .icon-bottom {
   position: absolute;
@@ -517,6 +577,186 @@
   .message .form form {
     margin-left: 1.4rem;
   }
+}
+
+.chatbot {
+  width: 25rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 5.5rem;
+  background-color: #f3f5fe;
+  border-radius: 1rem;
+  border: 1px solid #03071A;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.8rem #03071A;
+          box-shadow: 0.1rem 0.1rem 0.8rem #03071A;
+  overflow: hidden;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  pointer-events: none;
+  opacity: 0;
+  overflow: hidden;
+}
+.chatbot header {
+  background-color: #081969;
+  color: #f3f5fe;
+  padding: 1rem;
+  position: relative;
+}
+.chatbot header h2 {
+  font-size: 1.3rem;
+}
+.chatbot header i {
+  position: absolute;
+  right: 1rem;
+  top: 40%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+.chatbot .chatbox {
+  overflow-y: auto;
+  padding: 1rem;
+  height: 25rem;
+}
+.chatbot .chatbox .chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+.chatbot .chatbox .chat p {
+  color: #f3f5fe;
+  background-color: #081969;
+  padding: 0.7rem;
+  font-size: 0.95rem;
+  max-width: 75%;
+}
+.chatbot .chatbox .incoming i {
+  padding: 1.2rem 0.5rem;
+  font-size: 1.2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #081969;
+}
+.chatbot .chatbox .incoming p {
+  color: #081969;
+  background-color: #e4e8fb;
+  border-radius: 0.5rem 0.5rem 0.5rem 0;
+}
+.chatbot .chatbox .outgoing {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.chatbot .chatbox .outgoing p {
+  border-radius: 0.5rem 0.5rem 0 0.5rem;
+}
+.chatbot .chat-input {
+  position: absolute;
+  bottom: 0;
+  padding: 0.4rem 1rem;
+  width: 100%;
+  border-top: 1px solid #081969;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  background-color: #f3f5fe;
+}
+.chatbot .chat-input #message {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  padding: 1rem 0.3rem;
+  font-size: 0.95rem;
+  background-color: #f3f5fe;
+  resize: none;
+}
+.chatbot .chat-input #send-btn {
+  font-size: 1.2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #081969;
+  cursor: pointer;
+  visibility: hidden;
+}
+.chatbot .chat-input #message:valid ~ #send-btn {
+  visibility: visible;
+}
+
+@media (max-width: 490px) {
+  .chatbot {
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 0;
+  }
+  .chatbot header i {
+    display: block;
+  }
+  .chatbot .chatbox {
+    height: 90%;
+  }
+}
+.show-chatbot .chatbot {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.chatbot-toggler {
+  position: fixed;
+  border: none;
+  background-color: #081969;
+  color: #f3f5fe;
+  width: 3.3rem;
+  height: 3.3rem;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 50%;
+  border: 1px solid #f3f5fe;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+.chatbot-toggler i {
+  position: absolute;
+  font-size: 1.3rem;
+}
+.chatbot-toggler i:last-child {
+  opacity: 0;
+}
+
+.show-chatbot .chatbot-toggler i:last-child {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.show-chatbot .chatbot-toggler i:first-child {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .footer {
